@@ -1,0 +1,192 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+:root {
+    --border-color: #2e2e2e;
+    --highlight-color: #855cd6;
+    --hover-color: #ececec;
+}
+
+body {
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Google Sans", sans-serif;
+    background-color: #1d1d1d;
+}
+
+.container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+
+    -webkit-transition: all 0.3s ease;
+
+    -o-transition: all 0.3s ease;
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    opacity: 70%;
+}
+
+.card-image {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.card-header {
+    margin: 0px;
+    margin-left: 0px;
+    font-size: 0.9rem;
+
+    color: #855cd6;
+    text-align: left;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.card-author {
+    margin: 0px;
+    margin-left: 0px;
+
+    color: #989898;
+    text-align: left;
+
+    z-index: 1;
+}
+
+.profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.profile-picture {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.profile-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: #1d1d1d;
+
+    font-family: "Google Sans", sans-serif;
+    font-weight: bold;
+    color: var(--highlight-color);
+
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--border-color);
+}
+
+.heading {
+    text-align: center;
+}
+
+.highlight {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 60%;
+    background-color: var(--border-color);
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    -webkit-filter: blur(5px);
+
+            filter: blur(5px);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+
+    pointer-events: none;
+}
