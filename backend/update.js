@@ -39,7 +39,24 @@ const curators = [
     'skyset',
     'alphabetica',
     'ggenije',
-    'Hobson-TV'
+    'Hobson-TV',
+    'dillyd',
+    'Dinosu',
+    'nembence',
+    '52525rr',
+    'PullJosh',
+    'MonkeyBean2',
+    'IguanaLover',
+    'Mr-Mathmatical',
+    'leszpio',
+    'adeoguntechno',
+    'integrated',
+    'Haudio',
+    'vubi',
+    'PlXELS',
+    'viimo',
+    'PokeNinjaGuy',
+    'shock59'
 ]
 
 async function getFavorites(user) {
