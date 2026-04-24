@@ -31,7 +31,7 @@ function addProject(project) {
 }
 
 let offset = 0;
-const limit = 30;
+const limit = 32;
 
 function loadProjects() {
     const end = Math.min(offset + limit, data.length);
